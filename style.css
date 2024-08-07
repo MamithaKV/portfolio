@@ -1,0 +1,284 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 130px;
+}
+.listitems{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{
+    text-decoration: underline;
+    color: red;
+}
+.homecontents{
+    /* we want to drop the the content to down so we used margin  */
+    margin: 13% 0px 0px 8%;
+   
+
+}
+#username{
+    font-size: 50px ;
+    font-family: "Sofia", cursive;
+    margin-bottom: 20px ;
+}
+#lname{
+    font-family: "Cedarville Cursive", cursive;
+    color: orange;
+}
+#userdetails{
+    /* gap between two paragraph line can adjust through line height */
+    line-height: 1.2;
+}
+#download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    /* looklike button */
+    border-radius: 10px;
+    /* anchor tag is an inline element so padding and margin works on left and right only */
+    padding: 10px;
+    /* padding working can be done using disply */
+    display: inline-block;
+    margin-top: 20px;
+}
+.homeimages{
+    /*we want to set the image as one below another */
+    /* the image is seen as 50% so we want to overlap the image so width set as45% */
+    width: 45%;
+    height: 75%;
+    /*  images shift to right use position property*/
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    /* homeimages same height can be get using 100% */
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50);
+    transition:bottom 2s,left 1s;
+}
+.homeimages:hover #shapes{
+    bottom: 70px;
+}
+.homeimages:hover #girl{
+    left:40% ;
+}
+#about{
+    margin: 15% 8% 0px 18%;
+}
+.sectionhead{
+    text-align: center;
+}
+.mainhead{
+    font-size: 30px;
+    font-family: "Calistoga", serif;
+  font-weight: 100;
+}
+.subhead{
+    font-size: 20px;
+    color: green;
+}
+/* flex cant control the width and height */
+/* but grid can set the height and width (flex and grid are same concept */
+.aboutbody{
+    margin-top: 20px;
+    
+    display: grid;
+    /*  grid-template-columns:repeat(2,1fr) */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.img1{
+    width: 80%;
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.img2{
+    width: 100%;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+.barhead,.barpercent{
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.htmlbar{
+    background-color: orange;
+    width: 91%;
+}
+.cssbar{
+    background-color: orange;
+    width: 85%;
+}
+.jsbar{
+    background-color: orange;
+    width: 86%;
+}
+.htmlbar{
+    background-color: orange;
+    width: 85%;
+}
+.reactbar{
+    background-color: orange;
+    width: 89%;
+}
+/* contactt---------- */
+#contact{
+    margin: 0px 8%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.icon{
+  /* border: solid; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+/* icon last brands is the class same */
+.brands{
+    color: black;
+    font-size: 1.8rem;
+}
+/* hover for multiple color */
+.icon:hover{
+    background-image: linear-gradient(to bottom right,red,yellow,white);
+}
+/* hover to set white  color for the icon */
+.icon:hover .brands{
+    color: white;
+
+/* animation */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+animation: rotate 3s;
+}
+/* animation define use=keyframes */
+/* ----------------- */
+        /* @keyframes example {
+                  from {background-color: red;}
+                  to {background-color: yellow;}
+         } */
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform:rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin: 8% 0px 0px 8%;
+    
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrrow{
+    float: right;
+    margin: -30px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* browser scrollbar can select using webkit */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(221, 226, 226);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(141, 134, 134);
+    border-radius: 10px;
+}
+/* only the time of page open animation */
+          /* 1. animate.css */
+          /* block elements only animate link work */
+          /* where you want to animate that place add class="animate__animated " */
+
+          /* 2.aos github animation */

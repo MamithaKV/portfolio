@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Gupter:wght@400;500;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalnia+Glaze:wght@100..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- animate cdn link -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<!-- aos animation cdn link  -- bottom of the page -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+   <div id="container" >
+    <!-- navbar -->
+     <nav>
+        <!-- logo -->
+         <img src="./images/logo.jpeg" alt="logo" class="logo">
+         <ul>
+            <li class="listitems"><a class="links" href="">HOME</a></li>
+            <li class="listitems"><a class="links" href="">ABOUT</a></li>
+            <li class="listitems"><a class="links" href="">SKILLS</a></li>
+            <li class="listitems"><a class="links"href="">CONTACT</a></li>
+         </ul>
+     </nav>
+     <!-- home -->
+             <!-- either we  can use div or any other container tag(select etc) -->
+      <section id="home">
+             <!--inside home there is two partition one is content and anothr is images  -->
+             <!-- we have to create two container tag for these two -->
+           <div class="homecontents">
+            <!-- animate.css we  bsite gives so many animation then copy it and paste it -->
+            <h1 class="animate__animated animate__slideInRight" id="username">I'am Ana <span id="lname">Steel</span></h1>
+               <p id="userdetails"> 
+                  This is my official portfolio website to describe all<br>  
+                  <!-- br used for our paragraph in output as two line -->
+                   Details and work experience in web Development </p>
+                   <a id="download" href="">DOWNLOAD CV</a>
+           </div>
+           <div class="homeimages">
+              <img src="./images/shadow.png" alt="shape" class="group1" id="shape">
+              <img src="./images/girl.png" alt="girl" class="group1" id="girl">
+
+           </div>
+      </section>
+      <!-- about -->
+       <section id="about">
+         <div class="sectionhead">
+            <h2 class="mainhead"> About Me</h2>
+            <span class="subhead">Introduction</span>
+         </div>
+         <div class="aboutbody">
+            <!-- data aos gives the animation to the about picture -->
+            <div  data-aos="zoom-in" class="aboutimage">
+               <img class="img1" src="./images/image.webp" alt="about">
+            </div>
+            <div class="aboutcontent">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi porro repellat sit voluptatibus aperiam perspiciatis voluptate nisi laborum sed dolorem incidunt, possimus culpa praesentium aspernatur corrupti suscipit iste ut consequuntur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem. Veritatis facere, architecto iste sunt at asperiores laboriosam, eum excepturi placeat, pariatur autem aperiam accusantium modi consectetur nihil eaque delectus.</p>
+               <div class="information">
+                  <div class="infobox">
+                     <i class="fa-solid fa-user"></i>
+                     <span>Ana Steel</span>
+                  </div>
+                  <div class="infobox">
+                     <i class="fa-solid fa-phone"></i>
+                     <span>9087654334</span>
+                  </div>
+                  <div class="infobox">
+                     <i class="fa-solid fa-envelope"></i>
+                     <span>anasteel@gmail.com</span>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+       <!-- skills -->
+        <section id="skill">
+         <div class="sectionhead">
+            <h2 class="mainhead"> Skills</h2>
+            <span class="subhead">My Skills</span>
+         </div>
+         <div class="skillcontent">
+            <div class="progressbar">
+               <!-- html bar -->
+                <div class="bars">
+                  <h3 class="barhead">HTML</h3>
+                  <span class="barpercent">91%</span>
+                  <div class="basebar"></div>
+                  <div class="basebar htmlbar"></div>
+                </div>
+
+                <!-- css bar -->
+                <div class="bars">
+                  <h3 class="barhead">CSS</h3>
+                  <span class="barpercent">85%</span>
+                  <div class="basebar"></div>
+                  <div class="basebar cssbar"></div>
+                </div>
+                <!-- js bar -->
+                <div class="bars">
+                  <h3 class="barhead">JS</h3>
+                  <span class="barpercent">86%</span>
+                  <div class="basebar"></div>
+                  <div class="basebar jsbar"></div>
+                </div>
+                 <!-- react bar -->
+                 <div class="bars">
+                  <h3 class="barhead">REACT</h3>
+                  <span class="barpercent">89%</span>
+                  <div class="basebar"></div>
+                  <div class="basebar reactbar"></div>
+                </div>
+               
+            </div>
+            <div data-aos="flip-left" class="skillimg">
+               <img  class="img2" src="./images/pl.png" alt="skills">
+            </div>
+         </div>
+        </section>
+       <!-- contact -->
+        <section id="contact">
+         <div class="sectionhead">
+            <h2 class="mainhead"> Contact</h2>
+            <span class="subhead">My Contacts</span>
+         </div>
+         <div class="iconcollection">
+         <!-- linkedin -->
+                       <!-- href is used to hover the icon to specified application -->
+          <div class="icon">
+            <a href="https://www.instagram.com/mamithahh/" target="_blank"><i class="fa-brands fa-linkedin brands"></i></a>
+          </div>
+          <!-- facebook -->
+          <div class="icon">
+            <a href="https://www.instagram.com/mamithahh/" target="_blank"><i class="fa-brands fa-facebook brands"></i></a>
+          </div>
+           <!-- whatsapp -->
+           <div class="icon">
+            <a href="https://www.instagram.com/mamithahh/" target="_blank"><i class="fa-brands fa-whatsapp brands"></i></a>
+          </div>
+            <!-- twitter -->
+            <div class="icon">
+               <a href="https://www.instagram.com/mamithahh/" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+             </div>
+             <!-- github -->
+             <div class="icon">
+               <a href="https://www.instagram.com/mamithahh/" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+             </div>
+              <!-- instagram -->
+              <div class="icon">
+               <a href="https://www.instagram.com/mamithahh/" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+             </div>
+            </div>
+        </section>
+        <!-- footer -->
+         <footer>
+         <p id="copyright"> 
+            &copy; My portfolio website - june 2024 , all rights reserved to &reg; Ana Steel 
+         </p>
+         <div class="icon uparrow">
+            <a href=""> <i class="fa-solid fa-angle-up brands"></i></a>
+          </div>
+
+         </footer>
+   </div> 
+</body>
+<!-- aos animation cdn js link = set in to after behaviour like after body -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- aos js cdn initialise aos link -->
+<script>
+   AOS.init();
+ </script>
+</html>
