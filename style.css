@@ -265,20 +265,3 @@ footer{
 html{
     scroll-behavior: smooth;
 }
-/* browser scrollbar can select using webkit */
-::-webkit-scrollbar{
-    width: 10px;
-}
-::-webkit-scrollbar-track{
-    background-color: rgb(221, 226, 226);
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgb(141, 134, 134);
-    border-radius: 10px;
-}
-/* only the time of page open animation */
-          /* 1. animate.css */
-          /* block elements only animate link work */
-          /* where you want to animate that place add class="animate__animated " */
-
-          /* 2.aos github animation */
